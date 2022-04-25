@@ -29,3 +29,7 @@ PS> docker run --rm hello-world | Out-File result-1.txt
 結果ファイル `result-1.txt` をこのワークツリーにadd,commitして提出(push)してください。
 提出先ではこのファイル名固定で内容をチェックして判定するので、ファイル名のミスに注意してください。
 
+## (2) コマンドを走らせてみよう
+
+イメージ alpine を使用し、コンテナ内で `cat /etc/hosts` コマンドを実行してください。
+出力を同様に `result-2.txt` に保存・提出してください。
