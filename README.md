@@ -33,3 +33,11 @@ PS> docker run --rm hello-world | Out-File result-1.txt
 
 イメージ alpine を使用し、コンテナ内で `cat /etc/hosts` コマンドを実行してください。
 出力を同様に `result-2.txt` に保存・提出してください。
+
+## (3) 名前付きコンテナを生成してみよう
+
+イメージ alpine を使用し、名前付きコンテナ `exam20220426` のもとで `hostname` コマンドを走らせてみましょう。
+
+このときのコマンドラインをファイル `result-3.txt` に保存・提出してください。具体的な場所がわかりにくいと思うので画像を添付します(あくまでサンプル、画像から手打ちで写した場合はNGとなります)。
+
+![](images/exam3-example.png)
