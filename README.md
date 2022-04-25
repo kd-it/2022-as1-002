@@ -2,23 +2,30 @@
 
 Dockerがちゃんと入ったかを検証してみましょう。
 
-## `docker` コマンドが動くかを検証しましょう
+##  (1)  `docker` コマンドが動くかを検証しましょう
 
 ```
 $ docker run --rm hello-world
 ```
 
 を実行し、いわゆるHello Worldが動くことを確認して下さい。
+既に実施していると思うので、これは問題ないでしょう。
+そして出力内容を保存して下さい。
+保存先ファイル名は `result-1.txt` としてください。
 
-## 確認できたら、ファイルに保存しましょう。
+保存にはリダイレクトを使うといいでしょう。
 
-リダイレクトを使って出力内容を保存して下さい。
-保存先ファイル名は `result.txt` としてください。
-
+```bash
+# zsh, bash
+% docker run --rm hello-world > result-1.txt
 ```
-$ docker run --rm hello-world > result.txt
+
+PowerShellを使っている場合、リダイレクトで内容が壊れることがあるので、パイプ渡しで `Out-File` コマンドレットを使って対応してください(下の例を参照)。
+
+```pwsh
+PS> docker run --rm hello-world | Out-File result-1.txt
 ```
 
-結果ファイル `result.txt` をこのワークツリーにadd,commitして提出(push)してください。
+結果ファイル `result-1.txt` をこのワークツリーにadd,commitして提出(push)してください。
 提出先ではこのファイル名固定で内容をチェックして判定するので、ファイル名のミスに注意してください。
 
