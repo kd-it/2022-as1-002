@@ -1,0 +1,1 @@
+docker run --name exam20220426 alpine hostname
